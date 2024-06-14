@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+</head>
+<body>
+  <h1>Chat with Claude or GPT</h1>
+  <div>
+    <label for="apiProvider">API Provider:</label>
+    <select id="apiProvider">
+      <option value="anthropic">Anthropic</option>
+      <option value="openai">OpenAI</option>
+    </select>
+  </div>
+  <div>
+    <label for="anthropicApiKey">Anthropic API Key:</label>
+    <input type="text" id="anthropicApiKey">
+  </div>
+  <div>
+    <label for="openaiApiKey">OpenAI API Key:</label>
+    <input type="text" id="openaiApiKey">
+  </div>
+  <div>
+    <textarea id="userInput" rows="4" cols="50"></textarea>
+    <button onclick="sendMessage()">Send</button>
+  </div>
+  <div id="chatbox"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
